@@ -1,5 +1,5 @@
 <?php
-  include($_SERVER['DOCUMENT_ROOT'].'Basics/basics.php');
+  include($_SERVER['DOCUMENT_ROOT'].'/Basics/basics.php');
   html_generate_top("En cours");
 ?>
     <h1>Welcome</h1>
