@@ -11,11 +11,12 @@ Simple Web Interface in PHP for RetroPi
   ```
 ### Install 
 
-Copy the *content* of this repository to /var/www/html
+Copy the *content* of this repository to `/var/www/html`
 There are two solutions :
-  - Clone this repository in *html*
+  - Clone this repository in `html`
     ```bash
     cd /var/www/html
     pwd # Verify that you are in the good directory
     git clone https://github.com/lepaincestbon/RPie-Simple-WebUI.git . # Don't forget the point at the end !!!
     ```
+  - Download from github and unzip in `/var/www/html` (becare full to take files out of directory `RPIe-Simple-WebUI`)
