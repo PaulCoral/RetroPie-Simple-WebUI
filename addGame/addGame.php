@@ -1,5 +1,5 @@
 <?php
-  include('/Basics/basics.php');
+  include($_SERVER['DOCUMENT_ROOT'].'Basics/basics.php');
   html_generate_top("Adding a Game");
 ?>
 
