@@ -5,7 +5,7 @@
     <!DOCTYPE html>
     <html>
       <head>
-        <title>$string_title</title>
+        <title>'.$string_title.'</title>
       </head>
       <body>
     ';
