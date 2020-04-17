@@ -1,8 +1,7 @@
 <?php
-  include($_SERVER['DOCUMENT_ROOT'].'/Basics/basics.php');
-  html_generate_top("En cours");
+	include($_SERVER['DOCUMENT_ROOT'].'/Basics/basics.php');
+  	html_generate_top("Welcome");
 ?>
-    <h1>Welcome</h1>
     <p>This is a small Web interface for a RetroPi station.<p>
     <h2>What do you want to do?</h2>
     <p>
