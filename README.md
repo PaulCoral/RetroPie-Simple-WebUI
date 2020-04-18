@@ -11,8 +11,8 @@ Simple Web Interface in PHP for RetroPi
   ```
 ### Install 
 
-Copy the *content* of this repository to `/var/www/html`
-There are two solutions :
+- Copy the *content* of this repository to `/var/www/html`
+  There are two solutions :
   - Clone this repository in `html`
     ```bash
     cd /var/www/html
@@ -20,3 +20,7 @@ There are two solutions :
     git clone https://github.com/lepaincestbon/RPie-Simple-WebUI.git . # Don't forget the point at the end !!!
     ```
   - Download from github and unzip in `/var/www/html` (becare full to take files out of directory `RPIe-Simple-WebUI`)
+  
+- Change `RetroPie/roms` directory permission : *TODO*
+- Set the location `RetroPie/roms`.*TODO*
+  
