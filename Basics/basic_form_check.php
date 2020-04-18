@@ -42,9 +42,6 @@
 	 * string $return_addr : the link leading to a form form corrections, HOME PAGE by default
 	 */
 	function check_post_zero($return_addr="/"){
-		if(count($_POST) == 0){
-			print_error_post_msg($return_addr);
-			exit();
-		}
+		check_post_expected(0, $return_addr);
 	}
 ?>
