@@ -10,7 +10,7 @@
     <h2>What do you want to do?</h2>
     <p>
       <ul>
-        <li><a href='/AddGame/addGame.php'>Add a game to RetroPi</a></li>
+        <li><a href='/AddGame/addGame.php'>Add a game to RetroPie</a></li>
 		<li><a href='/Configure/configure.php'>Configuration Menu</a></li>
         <li>Coming Soon ...</li>
       </ul>
