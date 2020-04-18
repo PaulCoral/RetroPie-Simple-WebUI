@@ -3,6 +3,7 @@ Simple Web Interface in PHP for RetroPi
 
 ### Prerequisites
 
+- Install RetroPie
 - Install apache2 and PHP on your Raspberry Pi
   ```bash
   sudo apt update 
@@ -22,6 +23,16 @@ Simple Web Interface in PHP for RetroPi
   - Download from github and unzip in `/var/www/html` (becare full to take files out of directory `RPIe-Simple-WebUI`)
   
 - Run `sudo bash setup.sh` or `sudo sh setup.sh`. Follow the instructions. (Normally you can run it multiple times).
+
+- In `php.ini` allow : 
+  - file upload
+  - set a good post and file upload size
+
+### Notes
+  -Tested on :
+    - Raspberry Pi 3 B+
+    - Raspbian lite Buster (stable)
+    - Apache2 + PHP7.3 from raspbian repository
 
 
 Created by [Paul Coral](https://github.com/lepaincestbon/ "Paul Coral's github account")
