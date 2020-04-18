@@ -1,5 +1,9 @@
 <?php
 
+/*
+ * Basic function used in most web pages
+ */
+
 function html_generate_top(string $string_title) {
 	$emoji="&#x1f9ea;";
     echo '
