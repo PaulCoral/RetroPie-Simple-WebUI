@@ -46,7 +46,7 @@ do
 
 	while [ ! -d "$RPIE_PATH" ]
 	do
-		echo "Enter RetroPie directory path : "
+		echo "Enter RetroPie directory path WITHOUT / : "
     	read RPIE_PATH
 		if [ ! -d "$RPIE_PATH" ]
 		then
@@ -61,7 +61,7 @@ do
 		path_is_ok=true
 		touch $RPIE_PATH_FILE
 		> $RPIE_PATH_FILE
-		echo $RPIE_PATH >> $RPIE_PATH_FILE
+		printf $RPIE_PATH >> $RPIE_PATH_FILE
 	fi
 done
 
@@ -71,9 +71,15 @@ sudo chown $APACHE_USER $RPIE_PATH_FILE
 sudo chgrp $NEW_GROUP $RPIE_PATH_FILE
 sudo chmod 775 $RPIE_PATH_FILE
 
+# setting up roms directory privileges
+RPIE_ROMS_PATH=$RPIE_PATH"/roms"
+echo "setting privilege in "$RPIE_ROMS_PATH
+sudo chgrp $NEW_GROUP $RPIE_ROMS_PATH -R
+sudo chmod 775 $RPIE_ROMS_PATH -R
+
 
 ################################
-			End
+#			End
 ################################
 
 
