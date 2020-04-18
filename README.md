@@ -24,9 +24,11 @@ Simple Web Interface in PHP for RetroPi
   
 - Run `sudo bash setup.sh` or `sudo sh setup.sh`. Follow the instructions. (Normally you can run it multiple times).
 
-- In `php.ini` allow : 
-  - file upload
-  - set a good post and file upload size
+- In `php.ini` : 
+  - file_uploads = On
+  - upload_max_filesize = 500M (indicative value)
+  - post_max_size = 500M (indicative value)
+  - (OPTIONAL) use `phpinfo();` to see if your changes have been applied
 
 ### Notes
   -Tested on :
