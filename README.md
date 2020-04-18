@@ -31,7 +31,7 @@ Simple Web Interface in PHP for RetroPi
   - (OPTIONAL) use `phpinfo();` to see if your changes have been applied
 
 ### Notes
-  -Tested on :
+  - Tested on :
     - Raspberry Pi 3 B+
     - Raspbian lite Buster (stable)
     - Apache2 + PHP7.3 from raspbian repository
