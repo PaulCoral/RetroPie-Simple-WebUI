@@ -22,12 +22,12 @@ sudo usermod -a -G $NEW_GROUP $APACHE_USER
 echo "Changing groupe and privileges of some directories"
 
 echo " - ($PATH_TO_RPIE_MANAGE) ."
-sudo chgrp $NEW_GROUP .
-sudo chmod 755 . 
+sudo chgrp $NEW_GROUP . -R
+sudo chmod 775 . -R
 
-echo " - Variables"
-sudo chgrp $NEW_GROUP Variables -R
-sudo chmod 775 Variables -R
+#echo " - Variables"
+#sudo chgrp $NEW_GROUP Variables -R
+#sudo chmod 775 Variables -R
 
 
 
@@ -38,8 +38,12 @@ echo "#######################"
 echo "Starting : Server SETUP"
 
 path_is_ok=false
-RPIE_PATH_FILE='Variables/RPIE_FOLDER_PATH.php'
+RPIE_PATH_FILE_DIRECTORY='Variables'
+RPIE_PATH_FILE=$RPIE_PATH_FILE_DIRECTORY'/RPIE_FOLDER_PATH.php'
 RPIE_PATH=''
+
+echo "creating $RPIE_PATH_FILE"
+mkdir $RPIE_PATH_FILE_DIRECTORY
 
 while [ $path_is_ok = false ]
 do
@@ -47,7 +51,7 @@ do
 	while [ ! -d "$RPIE_PATH" ]
 	do
 		echo "Enter RetroPie directory path WITHOUT / : "
-    	read RPIE_PATH
+    	read -e -p "Path : " RPIE_PATH
 		if [ ! -d "$RPIE_PATH" ]
 		then
 			echo "NOT A VALID DIRECTORY"
@@ -88,3 +92,22 @@ echo "Finished, have fun :D"
 echo ""
 echo "Created by Paul Coral"
 echo "Pubished under GPL3 License, you are free to change or redistribute (but don't close sources)"
+echo ""
+echo ""
+echo "You'll need to reboot. Do you want to do it now ? (y/[n])"
+
+reboot_now=false
+read reboot_now
+if [ $reboot_now = 'y' ]
+then
+	echo "RetroPie will reboot in 3 seconds."
+	echo ""
+	printf "1 "
+	sleep 1
+	printf "2 "
+	sleep 1
+	printf "3 "
+	sleep 1
+	echo "REBOOTING!!!"
+	sudo reboot
+fi
