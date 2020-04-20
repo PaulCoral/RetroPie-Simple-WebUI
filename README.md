@@ -22,9 +22,9 @@ Simple Web Interface in PHP for RetroPi
     ```
   - Download from github and unzip in `/var/www/html` (becare full to take files out of directory `RPIe-Simple-WebUI`)
   
-- Run `sudo cd /var/www/html && sudo chmod 771 setup.sh && sudo ./setup.ch` or `sudo cd /var/www/html && sudo bash setup.sh`. **Don't use** ~~`sudo sh setup.sh`~~. Follow the instructions. (Normally you can run it multiple times).
+- Run `cd /var/www/html && sudo chmod 771 setup.sh && sudo ./setup.ch` or `sudo cd /var/www/html && sudo bash setup.sh`. **Don't use** ~~`sudo sh setup.sh`~~. Follow the instructions. (Normally you can run it multiple times).
 
-- In `php.ini` : 
+- In `php.ini` for apache2 (usually in `/etc/php/7.3/apache2/php.ini` for php7.3): 
   - file_uploads = On
   - upload_max_filesize = 500M (indicative value)
   - post_max_size = 500M (indicative value)
