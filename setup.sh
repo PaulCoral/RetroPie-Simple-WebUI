@@ -86,15 +86,21 @@ sudo chmod 775 $RPIE_ROMS_PATH -R
 #			End
 ################################
 
+LIGHT_CYAN='\033[1;36m'
+END_COLOR='\033[0m'
 
 echo ""
 echo "Finished, have fun :D"
 echo ""
-echo "Created by Paul Coral"
+echo -e "Created by ${LIGHT_CYAN} Paul Coral ${END_COLOR}"
 echo "Pubished under GPL3 License, you are free to change or redistribute (but don't close sources)"
 echo ""
 echo ""
 echo "You'll need to reboot. Do you want to do it now ? (y/[n])"
+
+##############
+### Reboot ###
+##############
 
 reboot_now=false
 read reboot_now
