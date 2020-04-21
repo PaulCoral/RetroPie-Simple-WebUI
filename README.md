@@ -1,9 +1,6 @@
 # RPie-Simple-WebUI
 Simple Web Interface in PHP for RetroPi
 
-### TODO
-
-Check the [TODO](TODO.md).
 
 ### Prerequisites
 
