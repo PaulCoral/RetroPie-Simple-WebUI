@@ -1,7 +1,7 @@
 <?php
 	include($_SERVER['DOCUMENT_ROOT'].'/Basics/basics.php');
 	html_generate_top("Adding a Game");
-  	$path_to_rpie_folder_path = $_SERVER['DOCUMENT_ROOT'].'/Variables/RPIE_FOLDER_PATH.php';
+  $path_to_rpie_folder_path = $_SERVER['DOCUMENT_ROOT'].'/Variables/RPIE_FOLDER_PATH.php';
 	$rpie_folder_path = file_get_contents($path_to_rpie_folder_path);
 	if($rpie_folder_path === FALSE){
 		echo "<strong>Error</strong> : Can't read RetroPie folder location." . $rpie_folder_path;
@@ -18,7 +18,7 @@
 ?>
 
 	<form action="addGame_upload.php" method="post" enctype="multipart/form-data">
-		Select the ROM file to import : 
+		Select the ROM file to import :
 		 <select id="gamePlatform" name="gamePlatform">
 		 	<?php
 				for($i = 2; $i < count($roms_dir_content); $i++){
@@ -26,7 +26,7 @@
 					echo "<option value=\"".$path_to_roms_folder."/".$rom_dir."\">".$rom_dir."</option>";
 				}
 			?>
-		</select> 
+		</select>
 		<input type="file" name="gameToUpload" id="gameFile" \>
 		<input type="submit" value="Upload Game" name="submit" \>
 	</form>

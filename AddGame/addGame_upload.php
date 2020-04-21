@@ -7,8 +7,10 @@
   	html_generate_top("File Upload");
 
 
-
-$target_dir = $_POST['gamePlatform'];
+$path_to_rpie_folder_path = $_SERVER['DOCUMENT_ROOT'].'/Variables/RPIE_FOLDER_PATH.php';
+$rpie_folder_path = file_get_contents($path_to_rpie_folder_path);
+$target_dir = $rpie_folder_path.'/roms';
+$target_dir = $target_dir.'/'.basename($_POST['gamePlatform']);
 $target_name = $target_dir . "/" . basename($_FILES["gameToUpload"]["name"]);
 
 if(file_exists($target_dir) === FALSE){
