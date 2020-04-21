@@ -16,18 +16,23 @@ function html_generate_top(string $string_title) {
 	<h1 id="main_title"><a href=\'/\'>'.$emoji.'</a> '.$string_title.'</h1>
     ';
 
-  }
+}
 
-  function html_generate_bottom() {
-    echo '
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>$string_title</title>
-      </head>
-      <body>
-    ';
+function html_generate_bottom() {
+  echo '
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>$string_title</title>
+    </head>
+    <body>
+  ';
 
-  }
+}
+
+//--------------------------------------------------------------
+function get_RPIE_FOLDER_PATH(): string{
+	return  file_get_contents($_SERVER['DOCUMENT_ROOT'].'/Variables/RPIE_FOLDER_PATH.php');
+}
 
 ?>
