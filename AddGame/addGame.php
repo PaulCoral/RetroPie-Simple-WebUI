@@ -1,8 +1,7 @@
 <?php
 	include($_SERVER['DOCUMENT_ROOT'].'/Basics/basics.php');
 	html_generate_top("Adding a Game");
-  //$path_to_rpie_folder_path = $_SERVER['DOCUMENT_ROOT'].'/Variables/RPIE_FOLDER_PATH.php';
-	//$rpie_folder_path = file_get_contents($path_to_rpie_folder_path);
+
 	$rpie_folder_path = get_RPIE_FOLDER_PATH();
 	if($rpie_folder_path === FALSE){
 		echo "<strong>Error</strong> : Can't read RetroPie folder location." . $rpie_folder_path;
