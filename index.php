@@ -11,8 +11,9 @@
     <p>
       <ul>
         <li><a href='/AddGame/addGame.php'>Add a game to RetroPie</a></li>
-				<li><a href='/Configure/configure.php'>Configuration Menu</a></li>
 				<li><a href='/ManageGames/manageGames.php'>Manage Games</a></li>
+				<!--These ones(below) stay at the end-->
+				<li><a href='/Configure/configure.php'>Configuration Menu</a></li>
         <li>Coming Soon ...</li>
       </ul>
     </p>
