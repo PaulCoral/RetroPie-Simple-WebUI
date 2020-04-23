@@ -22,7 +22,8 @@ if(move_uploaded_file($_FILES["gameToUpload"]["tmp_name"], $target_name)){
 	if(chmod($target_name, 0777) === FALSE){
 		echo "<strong>Warning</strong> Can't edit game file privilege, may result in some issue.";
 	}
-	echo "Game sucessfully uploaded : return to <a href=\"/\">HOME PAGE</a>.";
+	echo "Game sucessfully uploaded : return to <a href=\"/\">HOME PAGE</a>.<br>
+				Don't forget to restart emulationstation.";
 } else {
 	echo "Error while uploading game : <a href=\"addGame.php\">Try Again</a>.";
 }
