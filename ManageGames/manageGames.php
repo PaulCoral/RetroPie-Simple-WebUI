@@ -5,36 +5,6 @@
 
  	html_generate_top("Manage Games");
 
-	/*
-	 * @brief convert a size in Byte to MegaByte (rounded)
-	 * @param $data_size : the size to convert
-	 */
-	function adapt_size($data_size, $force_unit=""){
-		$threshold = 10000; // THRESHOLD for converstion
-		$size_unit = 1000; // THRESHOLD for converstion
-		$forced = TRUE;
-		$index = 0;
-		$size_label = array("B", "KB", "MB", "GB");
-		for($i = 0; $i < count($size_label); $i++){
-			if($force_unit === $size_label[$i]){
-				$forced = FALSE;
-				$index = $i;
-			}
-		}
-
-		if($forced === TRUE){
-			$i = 0;
-			while($data_size > $threshold && $i < count($size_label)){
-				$data_size /= $size_unit;
-				$i++;
-			}
-			$index = $i;
-		} else {
-			$data_size /= pow($size_unit, $index);
-		}
-		return round($data_size).$size_label[$index];
-	}
-
 ?>
 
 <!-- ###################################################  -->
