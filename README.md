@@ -28,12 +28,7 @@ Simple Web Interface in PHP for RetroPi
   - file_uploads = On
   - upload_max_filesize = 500M (indicative value)
   - post_max_size = 500M (indicative value)
-  - (OPTIONAL) use `phpinfo();` to see if your changes have been applied
-    ```bash
-    php -r "phpinfo();" |grep file_uploads
-    php -r "phpinfo();" |grep upload_max_filesize
-    php -r "phpinfo();" |grep post_max_size    
-    ```
+  - (OPTIONAL) use the PHP function `phpinfo();` to see if your changes have been applied
 
 ### Notes
   - Tested on :
