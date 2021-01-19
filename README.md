@@ -7,7 +7,6 @@ Simple Web Interface in PHP for RetroPi
 - Install apache2 and PHP on your Raspberry Pi
   ```bash
   sudo apt update 
-  #if you need => sudo apt upgrade
   sudo apt install apache2 php
   ```
 ### Install 
