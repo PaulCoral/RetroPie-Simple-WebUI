@@ -36,7 +36,7 @@ Simple Web Interface in PHP for RetroPie
     - Apache2 + PHP7.3 from raspbian repository
 
 ### License
-Pubished under GPL3 License, you are free to change or redistribute (but don't close sources)
+Pubished under GPL3 License
 
 Created by [Paul Coral](https://github.com/lepaincestbon/ "Paul Coral's github account")
 
