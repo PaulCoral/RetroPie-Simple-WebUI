@@ -38,6 +38,6 @@ Simple Web Interface in PHP for RetroPie
 ### License
 Pubished under GPL3 License
 
-Created by [Paul Coral](https://github.com/lepaincestbon/ "Paul Coral's github account")
+Created by [Paul Coral](https://github.com/PaulCoral/)
 
   
